@@ -17,6 +17,22 @@ h1 {
     border: 10px solid black;    
   }
 
+h2 {
+    text-transform: capitalize;
+}
+
+h4 {text-align: center;
+    text-transform: uppercase;
+}
+
+li {
+    text-transform: capitalize;
+}
+
+p {
+    text-transform: capitalize;
+}
+
 .content {
     width: 100vw;
     height: 100vh;
