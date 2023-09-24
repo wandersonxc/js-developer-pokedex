@@ -4,14 +4,25 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background-image: url("/background2.png");
+    background-size: contain;
 }
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px red;
+    background-color: white;
+    border-radius: 1rem;
+    border: 10px solid black;    
+  }
 
 .content {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #fff;
+    background-color: white;
+    border: 10px solid black;
 }
 
 @media screen and (min-width: 992px) {
