@@ -100,10 +100,8 @@ function showPokemonDetails(pokemon) {
     pokemonDetails.style.display = 'block';
 }
 
-// Chame a função para carregar os Pokémon inicialmente
 loadPokemonItems(offset, limit);
 
-// Manipulador de eventos para o botão "Load More"
 loadMoreButton.addEventListener('click', () => {
     offset += limit;
     const qtdRecordWithNextPage = offset + limit;
@@ -112,19 +110,16 @@ loadMoreButton.addEventListener('click', () => {
         const newLimit = maxRecords - offset;
         loadPokemonItems(offset, newLimit);
 
-        // Remova o botão quando todos os Pokémon forem carregados
         loadMoreButton.parentElement.removeChild(loadMoreButton);
     } else {
         loadPokemonItems(offset, limit);
     }
 });
 
-// Manipulador de eventos para o botão "Fechar" no card de detalhes
 closeButton.addEventListener('click', () => {
     pokemonDetails.style.display = 'none';
 });
 
-// Adicione os manipuladores de eventos para os botões da Pokebola em cada Pokémon
 pokemonList.addEventListener('click', (event) => {
     const pokeballButton = event.target.closest('.pokeball-button');
     if (pokeballButton) {
